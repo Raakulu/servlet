@@ -44,7 +44,7 @@ public class FormValidation extends HttpServlet {
 			rd.forward(req, resp);
 		}else
 		{
-			pw.println("wrong credentials");
+			pw.println("wrong_credentials");
 			RequestDispatcher rd = req.getRequestDispatcher("/views/login.jsp");
 			rd.include(req, resp);
 		}
